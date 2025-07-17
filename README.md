@@ -64,9 +64,10 @@ Replace cv2.matchTemplate with FaceNet / Dlib / DeepFace for better accuracy.
 >Store attendance data in SQLite / MySQL
 >Add email notifications and analytics dashboards
 
+<img width="1441" height="900" alt="Screenshot 2024-12-13 141053" src="https://github.com/user-attachments/assets/2694a2fc-3e19-44d8-b3fa-293c9e3c8fef" />
 
 <img width="1716" height="623" alt="Screenshot 2024-12-13 140946" src="https://github.com/user-attachments/assets/c54c987c-ea00-4a1c-8022-3edb194fcb16" />
-<img width="1716" height="623" alt="Screenshot 2024-12-13 140946" src="https://github.com/user-attachments/assets/d93bed9f-5e83-4c2a-aa40-1b8cfab4528d" />
+
 
 
 
