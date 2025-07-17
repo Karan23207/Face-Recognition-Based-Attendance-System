@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Attendance System</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        h1, h2 {
+            color: #00c6ff;
+            text-shadow: 0 0 8px #00c6ff, 0 0 16px #00c6ff;
+        }
+        form {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #00c6ff;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            color: #00c6ff;
+            font-weight: bold;
+        }
+        input {
+            width: calc(100% - 2rem);
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #00c6ff;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        button {
+            padding: 0.7rem 1.5rem;
+            background: #00c6ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #007bbf;
+        }
+        a {
+            color: #00c6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Face Attendance System</h1>
+
+        <form action="/register" method="POST">
+            <h2>Register User</h2>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <label for="login_id">Login ID:</label>
+            <input type="text" name="login_id" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <form action="/mark" method="POST">
+            <h2>Mark Attendance</h2>
+            <button type="submit">Start Attendance</button>
+        </form>
+
+        <h2>View Records</h2>
+        <a href="{{ url_for('view_attendance') }}">View Attendance</a>
+    </div>
+</body>
+</html>
