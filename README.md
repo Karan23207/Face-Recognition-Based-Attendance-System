@@ -10,14 +10,26 @@ Attendance records are saved in a CSV file, and users can view all attendance da
 5. CSV Storage of attendance records
 6. Web Interface using HTML + CSS (index and view pages)
 
- Technologies Used
+🛠️ Technologies Used
   * Python 3
   * Flask (for the web server)
   * OpenCV (for face detection and matching)
   * Pandas (for CSV handling)
   * HTML + CSS (for frontend)
 
-Application Workflow
+🚀 How to Run
+1. Clone the Repository
+ * git clone https://github.com/yourusername/face-attendance-system.git
+   cd face-attendance-system
+   
+2. Install Requirements
+ * Make sure you have Python 3 installed.
+ * pip install flask opencv-python pandas
+   
+3. Run the Application
+ * python app.py
+
+📸 Application Workflow
  1. Register User
 > Fill in Name and Login ID
 >Click Register
